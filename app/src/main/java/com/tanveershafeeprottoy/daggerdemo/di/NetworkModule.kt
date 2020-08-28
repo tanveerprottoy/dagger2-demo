@@ -1,6 +1,7 @@
-package com.tanveershafeeprottoy.daggerdemo
+package com.tanveershafeeprottoy.daggerdemo.di
 
 import androidx.annotation.NonNull
+import com.tanveershafeeprottoy.daggerdemo.BuildConfig
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient

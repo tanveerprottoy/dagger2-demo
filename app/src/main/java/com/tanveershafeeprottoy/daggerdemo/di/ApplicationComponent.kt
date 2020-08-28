@@ -1,9 +1,10 @@
-package com.tanveershafeeprottoy.daggerdemo
+package com.tanveershafeeprottoy.daggerdemo.di
 
+import com.tanveershafeeprottoy.daggerdemo.MainActivity
 import dagger.Component
 import javax.inject.Singleton
 
-@Component(modules = [NetworkModule::class])
+@Component(modules = [NetworkModule::class, ServiceModule::class])
 @Singleton
 interface ApplicationComponent {
 
