@@ -5,14 +5,13 @@ import com.tanveershafeeprottoy.daggerdemo.DemoService
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
-import javax.inject.Singleton
 
 // @Module informs Dagger that this class is a Dagger Module
 @Module
 object ServiceModule {
 
     @Provides
-    @Singleton
+    @MainScope
     @NonNull
     fun provideDemoService(
         retrofit: Retrofit
